@@ -1,0 +1,39 @@
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    require_trailing_commas: true
+    sort_child_properties_last: true
+
+  # producing the lint.
+dart_code_metrics:
+  rules:
+
+     - avoid-collection-methods-with-unrelated-types
+     - avoid-missing-enum-constant-in-map
+     - avoid-nested-conditional-expressions:
+         acceptable-level: 2
+     - avoid-throw-in-catch-block
+     - avoid-unnecessary-type-assertions
+     - avoid-unnecessary-type-casts
+     - avoid-unrelated-type-assertions
+     - binary-expression-operand-order
+     - double-literal-format:
+         severity: warning
+     - no-equal-then-else
+     - prefer-last
+     # Flutter rules
+     - always-remove-listener
+     - avoid-border-all
+     - avoid-unnecessary-setstate
+     - avoid-wrapping-in-padding
+     - prefer-const-border-radius
+     - prefer-extracting-callbacks
+     - prefer-match-file-name
+     - prefer-single-widget-per-file:
+         ignore-private-widgets: true
+         
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
